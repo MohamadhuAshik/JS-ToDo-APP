@@ -31,6 +31,9 @@ function validate() {
     error2.textContent = "";
     error3.textContent = "Enter Your Mobile Number"
     return false;
+  }else if(mobile.value.length <= 9) {
+        error3.textContent = "Plese Enter Valid Mobile Number"
+        return false;
   }
 
   if (email.value == "") {
@@ -63,7 +66,7 @@ var error8 = document.getElementById("error8")
 var input3 = document.getElementById("input3")
 var error9 = document.getElementById("error9")
 
-function submitLogin(){
+function Submitvalidate(){
   var cPass = document.getElementById("cPass");
   if(input1.value == ""){
     error7.textContent = "Enter Your UserName"
