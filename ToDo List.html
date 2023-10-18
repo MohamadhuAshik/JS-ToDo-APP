@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-primary  p-3">
+          <div class="container">
+            <a href="#" class="navbar-brand">ToDo List</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar"><span
+                class="navbar-toggler-icon"></span></button>
+    
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav ms-auto">
+               
+                <li >
+                    <a  href="#" class="nav-link active">TO-DO</a>
+                  </li>
+                
+                <li>
+                  <a href="index.html" class="nav-link">Sign up</a>
+                </li>
+    
+                <li>
+                  <a href="login.html" class="nav-link"><i class="fa-solid fa-user"></i>&nbsp;Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <div class="container text-bg-primary text-center mt-5">
+        <br>
+        <input class="form-control" id="input" placeholder="Type Your List"><br>
+        <button class="btn btn-success" onclick="add()">ADD</button>
+        <ol class="list-unstyled" id="list">
+            <br>
+            <li>DO YOUR LIST <button class="btn btn-success" onclick="del(event)">Delete</button></li>
+        </ol>
+        
+    </div>
+    <script src="./script.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

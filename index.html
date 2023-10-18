@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signup</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-primary  p-3">
+      <div class="container">
+        <a href="#" class="navbar-brand">Form-Validation</a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar"><span
+            class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav ms-auto">
+           
+            <li>
+              <a href="#signUp" class="nav-link active">Sign up</a>
+            </li>
+
+            <li>
+              <a href="login.html" class="nav-link"><i class="fa-solid fa-user"></i>&nbsp;Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div style="width: auto;" class="container-fluid  bg-primary" id="create">
+    <div class="create">
+      <form class="form-control" onsubmit="return validate()" action="login.html">
+        <label style="align-items: center;" class="form-lable" for="Create Account">Create Account</label><br>
+        <label class="form-lable" for="fname">First Name</label>
+        <input class="form-control" type="text" id="fName" placeholder="Enter Your First Name">
+        <div id="error1"></div>
+
+        <label class="form-lable" for="lname">Last Name</label>
+        <input class="form-control" type="text" id="lName" placeholder="Enter Your Last Name">
+        <div id="error2"></div>
+
+        
+        <div class="row">
+          <div class="col-md-6">
+            <label class="form-lable" for="mobile">Mobile No</label>
+            <input class="form-control" type="number" id="number" placeholder="Enter Your Mobile No">
+            <div id="error3"></div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-lable" for="Email id">Email ID</label>
+            <input class="form-control" type="email" id="email" placeholder="Enter Your Email ID">
+            <div id="error4"></div>
+          </div>
+        </div>
+
+        <label class="form-lable" for="password">Enter Password</label>
+        <input class="form-control" type="password" id="nPass" placeholder="Enter Your New Password">
+        <div id="error5"></div>
+
+        <label class="form-lable" for="Password">Confirm Your Password</label>
+        <input class="form-control" type="password" id="cPass" placeholder="Re enter Your Password">
+        <div id="error6"></div>
+
+        <input class="btn btn-primary form-control" type="submit" id="btn" value="Submit" onclick="validate()">
+
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

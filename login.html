@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-primary  p-3">
+            <div class="container">
+                <a href="#" class="navbar-brand">Form-Validation</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar"><span
+                        class="navbar-toggler-icon"></span></button>
+
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav ms-auto">
+
+
+                        <li>
+                            <a href="index.html" class="nav-link">Sign up</a>
+                        </li>
+                        <li>
+                            <a href="#login" class="nav-link active"><i class="fa-solid fa-user"></i>&nbsp;Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <form action="ToDo List.html" onsubmit="return submitLogin()" action="#" class="form-control">
+            <label for="login">Login</label>
+            <input id="input1" class="form-control" type="text">
+
+            <div id="error7"></div>
+
+            <label for="password">Password</label>
+            <input id="input2" class="form-control" type="password"><br>
+
+            <div id="error8"></div>
+
+            <input class="btn btn-primary form-control" type="submit" id="btn" onclick="submitLogin()" value="LOGIN">
+
+            <br>
+            <a class="btn btn-success mt-2 ms-auto" href="index.html">Create Account</a>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
