@@ -60,6 +60,8 @@ var input1 = document.getElementById("input1")
 var input2 = document.getElementById("input2")
 var error7 = document.getElementById("error7")
 var error8 = document.getElementById("error8")
+var input3 = document.getElementById("input3")
+var error9 = document.getElementById("error9")
 
 function submitLogin(){
   var cPass = document.getElementById("cPass");
@@ -72,9 +74,12 @@ function submitLogin(){
     error8.textContent = "Enter your Password"
     return false;
   }
-   
-  else if(input2.value !== nPass.value ){
-    error8.textContent = "Plese Enter Correctly"
+  if(input3.value == ""){
+    error8.textContent=""
+    error9.textContent = "Confirm your Password"
+    return false
+  }else if (input3.value !== input2.value){
+    error9.textContent = "Enter Correctly On Your Password"
     return false
   }
 }
