@@ -14,6 +14,7 @@ var error4 = document.getElementById("error4")
 var error5 = document.getElementById("error5")
 var error6 = document.getElementById("error6")
 function validate() {
+ // event.preventDefault()
   if (fName.value == "") {
     error1.textContent = "FirstName Is Required"
     return false;
@@ -45,8 +46,11 @@ function validate() {
   }
   if (cPass.value == "") {
     error5.textContent = ""
-    error6.textContent = "Plese Enter Correct Password"
+    error6.textContent = "Plese Enter Your Password"
     return false;
+  }else if(cPass.value !== nPass.value){
+    error6.textContent = "Enter Correct Password "
+     return false
   }
 }
 
@@ -58,15 +62,20 @@ var error7 = document.getElementById("error7")
 var error8 = document.getElementById("error8")
 
 function submitLogin(){
+  var cPass = document.getElementById("cPass");
   if(input1.value == ""){
     error7.textContent = "Enter Your UserName"
     return false;
   }
-
-  if(input2.value== ""){
+  if(input2.value=="" ){
     error7.textContent=""
     error8.textContent = "Enter your Password"
     return false;
+  }
+   
+  else if(input2.value !== nPass.value ){
+    error8.textContent = "Plese Enter Correctly"
+    return false
   }
 }
 
