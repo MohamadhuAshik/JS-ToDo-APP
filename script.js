@@ -46,13 +46,16 @@ function validate() {
     error4.textContent = ""
     error5.textContent = "Enter Your New Passworld"
     return false;
+  }else if(nPass.value.length<=7){
+    error5.textContent = "Password Must Contain 8 Characters"
+    return false
   }
   if (cPass.value == "") {
     error5.textContent = ""
     error6.textContent = "Plese Enter Your Password"
     return false;
   }else if(cPass.value !== nPass.value){
-    error6.textContent = "Enter Correct Password "
+    error6.textContent = "Password Not Match "
      return false
   }
 }
@@ -76,13 +79,16 @@ function Submitvalidate(){
     error7.textContent=""
     error8.textContent = "Enter your Password"
     return false;
+  }else if(input2.value.length<=7){
+    error8.textContent = "Password Must Contain 8 charactors"
+    return false
   }
   if(input3.value == ""){
     error8.textContent=""
     error9.textContent = "Confirm your Password"
     return false
   }else if (input3.value !== input2.value){
-    error9.textContent = "Enter Correctly On Your Password"
+    error9.textContent = "Password Not Match"
     return false
   }
 }
